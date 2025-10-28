@@ -1,0 +1,49 @@
+import 'dart:io';
+
+void main() {
+  int total = 0;
+  bool ordering = true;
+
+  while (ordering) {
+    print('\n--- Menu ---');
+    print('1 → Burger = ₹50');
+    print('2 → Pizza  = ₹120');
+    print('3 → Coffee = ₹40');
+    print('4 → Checkout');
+    stdout.write('Enter your choice (1-4): ');
+    int choice = int.parse(stdin.readLineSync()!);
+
+    switch (choice) {
+      case 1:
+        stdout.write('Enter quantity of Burger: ');
+        int qty = int.parse(stdin.readLineSync()!);
+        total = total + (50 * qty);
+        print('Added $qty Burger(s). Subtotal = ₹$total');
+        break;
+
+      case 2:
+        stdout.write('Enter quantity of Pizza: ');
+        int qty = int.parse(stdin.readLineSync()!);
+        total = total + (120 * qty);
+        print('Added $qty Pizza(s). Subtotal = ₹$total');
+        break;
+
+      case 3:
+        stdout.write('Enter quantity of Coffee: ');
+        int qty = int.parse(stdin.readLineSync()!);
+        total = total + (40 * qty);
+        print('Added $qty Coffee(s). Subtotal = ₹$total');
+        break;
+
+      case 4:
+        print('\n--- Checkout ---');
+        print('Final Bill Amount: ₹$total');
+        print('Thank you for ordering!');
+        ordering = false; // stop the loop
+        break;
+
+      default:
+        print('Invalid choice. Please enter 1–4.');
+    }
+  }
+}
