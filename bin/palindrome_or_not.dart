@@ -7,7 +7,8 @@ void main() {
   int rev = 0;
   while (p > 0) {
     int digit = p % 10;
-    rev = (rev * 10) + digit;p = p ~/ 10;
+    rev = (rev * 10) + digit;
+    p = p ~/ 10;
   }
   if(temp==rev){
     print("$temp is palindrome");}
