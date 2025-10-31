@@ -12,7 +12,7 @@ void main() {
   print(fruits);
   fruits.add("banana"); //to add a new element
   print(fruits);
-  print(fruits[1]);//access is done by using index
+  print(fruits[2]);//access is done by using index
   fruits[1] = "berry"; //replace the element
   fruits.insert(2, "mango"); //to add an element in a particular index
   print(fruits);
