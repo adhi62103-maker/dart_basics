@@ -24,4 +24,5 @@ void main() {
   var numlist = num1.toList(); //convert to list
   var merge = num2.union(num1);
   print(merge.union(s3));
+
 }
