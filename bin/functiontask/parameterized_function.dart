@@ -53,5 +53,4 @@ void function3({
   } else {
     print("pincode is not provided");
   }
-  print("state = $state");
 }
