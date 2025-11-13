@@ -17,8 +17,8 @@ class Cat extends Animal {
 }
 
 class Cow extends Animal {
-  void mwo() {
-    print("mwo");
+  void moo() {
+    print("moo");
   }
 }
 
@@ -28,5 +28,5 @@ void main() {
   var obj3 = Cow();
   obj1.eat();
   obj2.meow();
-  obj3.mwo();
+  obj3.moo();
 }
