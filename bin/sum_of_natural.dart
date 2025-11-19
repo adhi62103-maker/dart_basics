@@ -2,7 +2,7 @@ import 'dart:io';
 
 void main() {
   int sum = 0;
-  print("enter the lim");
+  print("enter the lim =9");
   int y = int.parse(stdin.readLineSync()!);
 
   for (int i = 1; i <= y; i++) {

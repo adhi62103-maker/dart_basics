@@ -1,20 +1,20 @@
 import 'dart:io';
 
 void main() {
-  bool isprime = true;
+  bool isPrime = true;
   stdout.write("enter a prime number = ");
   int p = int.parse(stdin.readLineSync()!);
   if (p <= 1) {
-    isprime=false;
+    isPrime=false;
   } else {
     for (int i = 2; i <= p ~/ 2; i++) {
       if (p % i == 0) {
-        isprime = false;
+        isPrime = false;
         break;
       }
     }
   }
-  if (isprime) {
+  if (isPrime) {
     print("$p is a prime number");
   } else {
     print("$p is not a prime number");
