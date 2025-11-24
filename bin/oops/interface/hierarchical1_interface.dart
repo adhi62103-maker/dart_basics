@@ -9,7 +9,6 @@ class LaserPrinter implements Printer {
   void printDocument() {
     print("LaserPrinter: Printing document using laser technology...");
   }
-
   @override
   void scanDocument() {
     print("LaserPrinter: Scanning document at high resolution...");

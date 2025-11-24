@@ -5,16 +5,13 @@ void main() {
   bool ordering = true;
 
   while (ordering) {
-    print('--- Menu ---\n1 → Burger = ₹50\n2 → Pizza  = ₹120\n3 → Coffee = ₹40\n4 → Checkout');
-    //or print('\n--- Menu ---');
-    //     print('1 → Burger = ₹50');
-    //     print('2 → Pizza  = ₹120');
-    //     print('3 → Coffee = ₹40');
-    //     print('4 → Checkout');
+    print(
+      '--- Menu ---\n1 → Burger = ₹50\n2 → Pizza  = ₹120\n3 → Coffee = ₹40\n4 → Checkout',
+    );
+
     print("enter your choice (1-4):");
     int choice = int.parse(stdin.readLineSync()!);
-    //stdout.write('enter your choice (1-4):');
-    //int choice = int.parse(stdin.readLineSync()!);
+
     switch (choice) {
       case 1:
         stdout.write('Enter quantity of Burger: ');
@@ -38,7 +35,9 @@ void main() {
         break;
 
       case 4:
-        print('--- Checkout ---\nFinal Bill Amount: ₹$total\nThank you for ordering!');
+        print(
+          '--- Checkout ---\nFinal Bill Amount: ₹$total\nThank you for ordering!',
+        );
         ordering = false; // stop the loop
         break;
 

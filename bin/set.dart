@@ -21,8 +21,9 @@ void main() {
   print(list1);
   var s3 = list1.toSet(); //convert to set
   print(s3);
-  var numlist = num1.toList(); //convert to list
+  var numList = num1.toList(); //convert to list
+  print(num1);
+  print(numList);
   var merge = num2.union(num1);
   print(merge.union(s3));
-
 }

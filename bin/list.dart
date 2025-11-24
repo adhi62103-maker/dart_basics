@@ -8,20 +8,20 @@ void main() {
 
   //growable list
 
-  var fruits = ["apple", "mango", "apple","kiwi"];
+  var fruits = ["apple", "mango", "apple", "kiwi"];
   print(fruits);
   fruits.add("banana"); //to add a new element
   print(fruits);
-  print(fruits[2]);//access is done by using index
-  fruits[1] = "berry"; //replace the element
-  fruits.insert(2, "mango"); //to add an element in a particular index
+  print(fruits[2]); //access is done by using index
+  fruits[0] = "berry"; //replace the element
   print(fruits);
-  fruits.removeAt(3);
-  //fruits.remove("apple");
+  fruits.insert(1, "mango"); //to add an element in a particular index
+  print(fruits);
+  fruits.removeAt(3); //fruits.remove("apple");
   print(fruits);
   print(fruits.elementAt(2));
- print( fruits.contains("kiwi"));
-print(fruits);
+  print(fruits.contains("kiwi"));
+  print(fruits);
   var vegetables = [];
   vegetables.addAll(([2, 5, "tomato", 7]));
   print(vegetables);
@@ -30,13 +30,14 @@ print(fruits);
 
   var value = vegetables.firstWhere((element) => element == 2);
   print(value);
- print( fruits.length);
-vegetables.clear();
-print(vegetables);
+  print(fruits.length);
+  vegetables.clear();
+  print(vegetables);
   //list in loops
   for (var fruit in fruits) {
     print(fruit);
-  }var i = [1,36,7,10];
+  }
+  var i = [1, 36, 7, 10];
   print(i);
 
   i.sort();

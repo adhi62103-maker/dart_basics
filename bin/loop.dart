@@ -2,7 +2,7 @@ void main() {
   ///for loop- syntax for (initialization; condition;increment/decrement counter);
   int i;
   for (i = 1; i <= 10; i++) {
-    print(i);
+    print("i = $i");
   }
 
   ///while loop- syntax : initialization;
@@ -24,8 +24,9 @@ void main() {
   ///increment/decrement counter
   ///}while(condition)
 
-
-  int a =1;
-  do{print("a = $a");
-  a++;}while(a<=10);
+  int a = 1;
+  do {
+    print("a = $a");
+    a++;
+  } while (a <= 10);
 }
